@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
+<link rel="text2.html">
+    <style>
+        body {
+            font-family: "Ewert", serif;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        section {
+            padding: 70px;
+        }
+
+        #elemen {
+            background-image: url('./img/elemen.png');
+            left: 10%;
+            width: 10px;
+            height: 10px;
+        }
+
+        #cover {
+            background-image: url('./img/cover21111111.jpg');
+            background-size: cover;
+            color: black;
+            text-align: center;
+            padding: 100px 0;
+            overflow-x: hidden;
+            width: auto;
+            height: auto;
+            
+        }
+
+        #cover button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: white;
+            border: none;
+            color: black;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        #quotes {
+            background-image: url('./img/DOA.jpg');
+            font-family: "Times New Roman", serif;
+            color: black;
+            text-align: center;
+
+        }
+
+        #quotes p {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        #profil {
+            background-image: url('./img/PROFIL.jpg');
+            font-family: "Playwrite CU", cursive;
+            background-color: black;
+            text-align: center;
+            color: black;
+        }
+
+        #profil img {
+            
+            width: 190px;
+            border-radius: 50%;
+            margin: 10px;
+        }
+
+        #acara {
+            background-image: url('./img/LOKASI.png');
+            font-family: "Bebas Neue", sans-serif;
+            text-align: center;
+            color: black;
+        }
+
+        #gallery {
+            width: auto;
+            background-image: url('./img/MOMEN2.png');
+            background-color: white;
+            text-align: center;
+            color: white;
+        }
+
+        #gallery img {
+            width: 200px;
+            margin: 20px;
+        }
+
+        #tamu-khusus {
+            background-image: url('./img/TM.png');
+
+        }
+        #rsvp {
+            background-image: url('./img/TM.png');
+            background-color: white;
+            text-align: center;
+        }
+        #kirim-hadiah {
+            background-image: url('./img/hadiah.png');
+        }
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        form button {
+            padding: 10px 20px;
+            background-color: white;
+            border: none;
+            color: black;
+            cursor: pointer;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        #kirim-hadiah img {
+            width: 200px;
+        }
+        #pesan {
+            background-image: url('./img/PESAN2.png');
+        }
+        #terima-kasih {
+            background-image: url('./img/TERIMAKASIH2.png');
+            font-family: "Playwrite CU", cursive;
+            background-color: white;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .custom-audio-control {
+            position: relative;
+            display: inline-block;
+            width: 50px;  
+            height: 50px;
+            background-image: url('your-custom-icon.png'); 
+            background-size: cover;
+        }
+        
+        .custom-audio-control audio {
+            opacity: 0;  
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            cursor: pointer; 
+        }
+
+        #nav {
+            display: flex;
+            justify-content: center;
+            position: fixed;
+            bottom: 5vh;
+            width: 100%;
+        }
+        
+        #nav ul {
+            background-color: #16325B;
+            padding: 0;
+            display: flex;
+            list-style: none;
+            border-radius: 10px;
+        }
+        
+        #nav ul li {
+            display: inline-block;
+            margin: 0;
+            padding: 5px 10px;
+        }
+        
+        #nav ul li a {
+            color: #fff; 
+            text-decoration: none;
+            font-size: 18px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #nav ul li:hover {
+            background-color: #4379F2;
+            border-radius: 7px;
+        }
+        
+        #nav ul li a:hover {
+            color: white; 
+
+    
+    </style>
+</head>
+<body>
+
+    <audio id="musik" loop autoplay>
+        <source src="./assets/audio/john.mp3">
+        </audio>
+    
+    <section id="cover">
+        
+        <h1>Undangan Pernikahan</h1>
+        <h2>Hamba Allah </h2>
+        <h2>&</h2>
+        <h2>Ratna Mutu Manikam</h2>
+        <p>Kepada Yth : <strong>Bpk. Satria Ade Putra</strong></p>
+        <button onclick="scrollToSection('quotes')">Buka Undangan</button>
+    </section>
+
+    <audio controls>
+        <source src="./assets/audio/john.mp3" type="audio/mpeg">
+    </audio>
+
+    <section id="quotes">
+        <h3>بِسْــــــــــــــــــمِ اللهِ الرَّحْمَنِ الرَّحِيْمِ</h3>
+        <p>وَمِنْ اٰيٰتِهٖٓ اَنْ خَلَقَ لَكُمْ مِّنْ اَنْفُسِكُمْ اَزْوَاجًا لِّتَسْكُنُوْٓا اِلَيْهَا وَجَعَلَ بَيْنَكُمْ مَّوَدَّةً وَّرَحْمَةً ۗاِنَّ فِيْ ذٰلِكَ لَاٰيٰتٍ لِّقَوْمٍ يَّتَفَكَّرُوْنَ</p>
+        <p>Artinya:"Di antara tanda-tanda (kebesaran)-Nya ialah bahwa Dia menciptakan pasangan-pasangan untukmu dari (jenis) dirimu sendiri agar kamu merasa tenteram kepadanya. Dia menjadikan di antaramu rasa cinta dan kasih sayang. Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir. (QS. Ar-Rum: 21)</p>
+    </section>
+
+    
+    <section id="profil">
+        <h3>Profil Pengantin</h3>
+        <img src="./img/pria.jpg" alt="Pengantin 1">
+        <p><strong>Hamba Allah</strong> anak ke-1 dari Bapak Hamba Allah dan Ibu Hamba Allah</p>
+        <a href="https://www.instagram.com/jefrinichol?igsh=ODVwNWswbW9rd2o1" target="_blank">Instagram Pengantin Pria</a> 
+        <img src="./img/wanita.jpg" alt="Pengantin 2">
+        <p><strong>Ratna Mutu Manikam</strong> anak ke-3 dari Bapak Surachman dan Ibu Nani</p>
+        <a href="https://www.instagram.com/mutu.ratna?igsh=MW80Y2J1dDRoN3IyMA==" target="_blank">Instagram Pengantin Wanita</a>
+        <br><br><br><br>
+    </section>
+
+    
+    <section id="acara">
+        <h3>Tanggal dan Lokasi Acara</h3>
+        <p>Akad Nikah: <strong>Jum'at, 3 Oktober 2031</strong></p>
+        <p>Resepsi: <strong>Minggu, 05 Oktober 2031</strong></p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.0698643179253!2d110.36716137412054!3d-7.782417477217754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a5830fe333539%3A0xd683fb55e24be0ba!2sHotel%20Santika%20Premiere%20Jogja!5e0!3m2!1sid!2sid!4v1726112805554!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    
+    <section id="gallery">
+        <h3>Gallery Momen Berharga</h3>
+        <img src="./img/galeri1.jpg" alt="Momen 1">
+        <img src="./img/galeri2.jpg" alt="Momen 2">
+        <img src="./img/galeri3.jpg" alt="Momen 3">
+        <img src="./img/galeri5.jpg" alt="Momen 3">
+        <img src="./img/galeri4.jpg" alt="Momen 3">
+        <video width="320" height="240" controls>
+            <source src="./assets/video/fairytale.mp4" type="video/mp4">
+            
+        </video>
+    </section>
+
+    
+    <section id="tamu-khusus">
+        <h3>Tamu Khusus yang Diundang</h3>
+        <table>
+            <tr>
+                <th rowspan="2">Nama</th>
+                <th colspan="2">Posisi</th>
+            </tr>
+            <tr>
+                <th>Perusahaan</th>
+                <th>Jabatan</th>
+            </tr>
+            <tr>
+                <td>Drs. Boan M.Pd</td>
+                <td>SMKN 1 Kota Bekasi</td>
+                <td>Kepala Sekolah</td>
+            </tr>
+            <tr>
+                <td>Amelia Putri</td>
+                <td>SMKN 1 Kota Bekasi</td>
+                <td>Alumni SMKN 1 Kota Bekasi</td>
+            </tr>
+            <tr></tr>
+                <td>Nabila Syifa Harahap</td>
+                <td>SMKN 1 Kota Bekasi</td>
+                <td>Alumni SMKN 1 Kota Bekasi</td>
+            </tr>
+            <tr></tr>
+                <td>Selviana Ramadani</td>
+                <td>SMKN 1 Kota Bekasi</td>
+                <td>Alumni SMKN 1 Kota Bekasi</td>
+            </tr>
+            <tr></tr>
+                <td>Shakila Putri Maisya</td>
+                <td>SMKN 1 Kota Bekasi</td>
+                <td>Alumni SMKN 1 Kota Bekasi</td>
+            </tr>
+            <tr></tr>
+                <td>Anisa Tri Oktavia</td>
+                <td>SMKN 1 Kota Bekasi</td>
+                <td>Alumni SMKN 1 Kota Bekasi</td>
+            </tr>
+        </table>
+    </section>
+
+    
+    <section id="rsvp">
+        <h3>Konfirmasi Kehadiran</h3>
+        <form>
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="number">Nomor Telepon:</label>
+            <input type="number" id="number" name="number" required><br>
+            <label for="attendance">Apakah Anda akan hadir?</label><br>
+            <input type="radio" id="yes" name="attendance" value="yes"> Ya<br>
+            <input type="radio" id="no" name="attendance" value="no"> Tidak<br><br>
+            <label for="guests">Jumlah Tamu:</label>
+            <input type="number" id="guests" name="guests" required><br>
+            <label for="comments">Pesan atau Permintaan Khusus:</label>
+            <textarea id="comments" name="comments"></textarea><br>
+            <button type="submit">Kirim Konfirmasi</button>
+        </form>
+    </section>
+
+    
+    <section id="kirim-hadiah">
+        <h3>Kirim Hadiah</h3>
+        <img src="./img/dana.jpg" alt="QR Code">
+        <p>No. Rekening: <span id="rekening">0812-8907-6415</span> <button onclick="copyText()">Salin</button></p>
+    </section>
+
+    
+    <section id="pesan">
+        <h3>Pesan & Doa</h3>
+        <form>
+            <label for="pesan">Pesan atau Doa:</label>
+            <textarea id="pesan" name="pesan" required></textarea><br>
+            <button type="submit">Kirim Pesan</button>
+        </form>
+    </section>
+
+    
+    <section id="terima-kasih">
+        <h3>Terima Kasih</h3>
+        <p>Terima kasih atas doa dan restu yang telah Anda berikan. Kami sangat menghargainya.</p>
+    </section>
+
+    <section id="section-1"> 
+    <div id="nav"></div>
+        <ul>
+            <li><a href="#section-2"><i class='bx bx-user'></i></a></li>
+            <li><a href="#section-3"><i class='bx bx-calendar'></i></a></li>
+            <li><a href="#section-4"><i class='bx bx-image'></i></a></li>
+            <li><a href="#section-5"><i class='bx bx-group'></i></a></li>
+            <li><a href="#section-6"><i class='bx bx-check-circle'></i></a></li>
+            <li><a href="#section-7"><i class='bx bx-story'></i></a></li>
+            <li><a href="#section-8"><i class='bx bx-transfer'></i></a></li>
+            <li><a href="#section-9"><i class='bx bx-heart'></i></a></li>
+        </ul>
+    </div>
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function copyText() {
+            var copyText = document.getElementById("rekening").textContent;
+            navigator.clipboard.writeText(copyText);
+        }
+    </script>
+
+</body>
+</html>
